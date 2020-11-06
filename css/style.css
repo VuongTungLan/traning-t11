@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1024px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.bg-img {
+    background-color: red;
+}
+
+.ft-w-b {
+    font-weight: bold;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-t-40 {
+    padding-top: 40px;
+}
+
+.p-b-40 {
+    padding-bottom: 40px;
+}
+
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-l-10 {
+    padding-left: 10px;
+}
+
+.m-b-3 {
+    margin-bottom: 3px;
+}
+
+.m-l-150 {
+    margin-left: 150px;
+}
+
+.m-r-150 {
+    margin-right: 150px;
+}
+
+.p-b-25 {
+    padding-bottom: 25px;
+}
+
+.p-t-25 {
+    padding-top: 25px;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container-150 {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.section-container-50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.section-container-300 {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+@media screen and (max-width: 767px) {
+    .section-container-150 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .section-container-300 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+}
+
+.section-banner {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px 15px;
+    border: 1px solid #160d0e;
+    border-left: none;
+    border-right: none;
+    margin: 15px 0;
+}
+
+.title {
+    padding-top: 20px;
+    font-size: 25px;
+    padding-bottom: 30px;
+    font-family: 'Leckerli One', cursive;
+}
+
+.col-1-3 {
+    display: inline-block;
+    width: calc(100%/3);
+}
+
+@media screen and (max-width: 767px) {
+    .col-1-3 {
+        display: block;
+        width: 100%;
+    }
+
+    .section4 .col-1-3 {
+        display: inline-block;
+        width: calc(100%/3);
+    }
+}
+
+.content {
+    text-align: center;
+}
+
+/*------------------------CUSTOM------------------------*/
+.header-discount {
+    color: white;
+    font-size: 15px;
+    background-color: red;
+}
+
+.header-nav {
+    background-color: #4c4c4c;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+}
+
+.menu a:hover{
+    color: #ed8c95;
+}
+
+.highlight {
+    display: inline-block;
+    color: black;
+    background-color: yellow;
+}
+
+.section1 {
+    background-image: url("/logo/flower-pattern.jpg");
+}
+
+.section1-slogan {
+    font-weight: 900;
+    font-size: 2.5rem; 
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.section1-button button {
+    width: 250px;
+    height: 60px;
+    background-color: black;
+    color: #f18d97;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.section2 {
+    background-image: url("/logo/flower-pattern2.jpg");
+}
+
+.section2 .content img{
+    width: 100px;
+    height: auto;
+}
+
+.section3 {
+    background-image: url("/logo/flower-pattern3.jpg");
+}
+
+.section3 .title {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.section3 img {
+    display: block;
+    margin: 15px 20px;
+    width: 200px;
+    overflow: hidden;
+}
+
+.section4 {
+    background-image: url("/logo/flower-pattern4.jpg");
+}
+
+.section4 i {
+    font-size: 55px;
+}
+
+.section5 {
+    background-color: #212121;
+}
+
+.section5 span {
+    color: white;
+}
+
+
+
+
