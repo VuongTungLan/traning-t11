@@ -1,0 +1,122 @@
+/*----------------------HEADER----------------------*/
+
+.header {
+    min-height: 100vh;
+    background-image: url("../images/background_header.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 80%;
+  }
+  
+  /* .header__images {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      max-width: 100%;
+  } */
+  
+  .header__top {
+    padding-top: 9.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__logo {
+    max-width: 11.8rem;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+  
+    .orange {
+      color: #fcae61;
+    }
+  
+    .gray {
+      color: var(--gray-dark);
+    }
+  }
+  
+  .menu {
+    margin-left: 34rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu__item {
+    padding: 2rem;
+  
+    &:last-child {
+      margin-left: 2.2rem;
+      padding: 0;
+    }
+  }
+  
+  .menu__link {
+    font-size: 1.6rem;
+    color: var(--gray-dark);
+  }
+  
+  .btn {
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    color: #fff;
+    width: 17rem;
+    height: 5.7rem;
+    background-color: #2500f9;
+    line-height: 5.7rem;
+    text-align: center;
+    border-radius: 5.7rem;
+  }
+  
+  .header__content {
+    padding-top: 25.4rem;
+    position: relative;
+    max-width: 51.8rem;
+    z-index: 2;
+  }
+  
+  .header__content-slogan {
+    color: var(--gray-dark);
+    font-size: 1.8rem;
+    padding: 0.8rem 4.6rem;
+    background-color: #e2eaed;
+    display: inline-block;
+    border-radius: 25px;
+  }
+  
+  .header__content-title {
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--gray-dark);
+    padding: 2.4rem 0;
+  }
+  
+  .header__content-desc {
+    font-size: 1.8rem;
+    color: var(--gray-light);
+    padding-bottom: 4rem;
+  }
+  
+  .header__content-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .link {
+    font-size: 1.6rem;
+    color: #2500f9;
+    padding: 0 2.5rem;
+  }
+
+  /*----------------------ABOUT----------------------*/
+@mixin component {
+  
+}

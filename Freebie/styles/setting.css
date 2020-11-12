@@ -1,0 +1,47 @@
+:root {
+    --gray-dark: #242f51;
+    --gray-light: #616368;
+    --primary-font: "Poppins";
+    --wrapper: 160rem;
+    --container: 117rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-weight: 300;
+    background-color: #f9fbfc;
+    color: var(--gray-light);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+  }
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.wrapper {
+    max-width: var(--wrapper);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+  }
