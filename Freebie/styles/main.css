@@ -47,6 +47,7 @@
     position: relative;
 }
 
+
 .header__image {
     filter: drop-shadow(5px 5px 19px #00000057);
 }
@@ -175,6 +176,40 @@
     z-index: -99;
     bottom: -5rem;
 }
+
+.menu {
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+  }
+  .menu__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+  }
+  .menu__item {
+    padding: 2rem;
+  }
+
+  .menu__link {
+    font-size: 1.6rem;
+    color: var(--gray-dark);
+  }
+
+  .header .menu__close {
+    display: none;
+  }
+
+  .header .menu__collapse {
+    display: none;
+    position: relative;
+    top: -5px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
 
 /*********************************************FEATURE*********************************************/
 .article-text h1 {
@@ -385,9 +420,9 @@
     position: relative;
 }
 
-.footer .navbar-nav .nav-item .nav-link {
+.footer .menu .menu__item .menu__link {
     font-size: 1.6rem;
-    color: white
+    color: white;
 }
 
 .footer__icon i{
@@ -406,9 +441,7 @@
 
 /*********************************************RESPONSIVED*********************************************/
 @media screen and (max-width: 992px) {
-    .header .navbar--collapse {
-        display: block;
-    }
+    
 
     .article-logos__item h1 {
         padding: 0;
@@ -490,7 +523,7 @@
     }
 
     .m-t-160 {
-        margin-top: 10rem;
+        margin-top: 7rem;
     }
 
     .m-l-44 {
@@ -527,7 +560,7 @@
 
     .header__content-btn {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
@@ -564,9 +597,59 @@
     .navbar-nav .nav-item:not(:first-child) {
         margin-left: 0rem;
     }
+
+    .header .menu {
+        margin-left: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        background-color: white;
+        border-left: 1px solid #f2f2f2;
+        min-width: 20rem;
+        transition: transform 0.25s linear;
+        will-change: transform;
+        transform: translateX(100%);
+      }
+      .header .menu.is-open {
+        transform: translateX(0);
+      }
+      .header .menu__list {
+        flex-direction: column;
+      }
+      .header .menu__item {
+        margin: 0;
+        width: 100%;
+      }
+      .header .menu__link {
+        display: block;
+        padding: 1.5rem;
+        border-bottom: 1px solid #f2f2f2;
+      }
+
+      .header .menu__collapse {
+          display: block;
+      }
+
+      .header .menu__close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 10;
+        cursor: pointer;
+        font-size: 1.4rem;
+        display: block;
+      }
+
+
 }
 
 @media screen and (max-width: 576px) {
+    .header__content-btn {
+        align-items: center ;
+    }
+
     .card {
         width: 90%;
         height: 50rem;
@@ -592,4 +675,20 @@
         padding-top: 4.3rem;
     }
 
+    .footer .menu__list {
+        flex-direction: column;
+    }
+
 }
+
+#start-btn {
+    font-size: 36px;
+    padding: 20px 40px 20px 80px ;
+    margin-top: 30px;
+    border-radius: 10px;
+    background:url("thanos-logo.png") white 15px no-repeat;
+    background-size: 50px;
+  }
+  .dust {
+    position: absolute;
+  }
