@@ -5,641 +5,582 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/setting.css">
+
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/bootstrap-grid.css">
+    <link rel="stylesheet" href="./styles/bootstrap-reboot.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    <!-- <link rel="stylesheet" href="./styles/bootstrap.css"> -->
-    
+    <link rel="stylesheet" href="./styles/setting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+        <script>
+            new WOW().init();
+            </script>
 </head>
+
 <body>
-    <div class="wrapper">
-        <!-----------------------------------------------HEADER----------------------------------------------->
-        <div class="header">
-            <img class="header__images header__images--0" src="./images/phone.png">
-            <img class="header__images header__images--1" src="./images/x.png">
-            <img class="header__images header__images--2" src="./images/x.png">
-            <img class="header__images header__images--3"src="./images/circle.png">
-            <img class="header__images header__images--4"src="./images/rec.png">
-            <div class="container">
-                <div class="header__top">
-                    <a href="#" class="header__logo">
-                        <span class="orange">App</span><span class="gray">Lab</span>
-                    </a>
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Home</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Key Features</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Pricing</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Testiminial</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">FAQ</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="btn">Try for free</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <!-----------------------------------------------HEADER----------------------------------------------->
+    <div class="header m-t-90">
+        <img class="img-fluid header__image-1" src="./images/stars.png">
+        <img class="img-fluid header__image-2" src="./images/star2.png">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg pb-5">
+                <a class="navbar-brand font-weight-bold logo  animate__animated animate__fadeInDown" href="#"><span class="logo--orange">App</span><span
+                        class="logo--dark">Lab</span></a>
+                <i class="fas fa-bars menu__collapse"></i>
+                <div class="menu">
+                    <i class="fas fa-times menu__close"></i>
+                    <ul class="menu__list  animate__animated animate__fadeInDown">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Key Features</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Pricing</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Testiminial</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <button class="btn btn--primary">Try for free</button>
+                        </li>
+                    </ul>
                 </div>
-                <div class="header__content">
-                    <div class="header__content-slogan">
-                        <img src="./images/tich.png">
-                        <span>#1 Editiors Choice App of 2020</span>
-                    </div>
-                    <h1 class="header__content-title">
-                        Best app for your modern lifestyle
-                    </h1>
-                    <p class="header__content-desc">
-                        Increase productivity with a simple to-do app. app for managing your personal budgets.
-                    </p>
-                    <div class="header__content-btn">
-                        <a href="#" class="btn">Try for free</a>
-                        <a href="#" class="link">Watch demo video</a>
-                    </div>
-                </div>
-                
-            </div>
-            <img src="./images/tower.png">
+            </nav>
         </div>
-        <!-----------------------------------------------END HEADER----------------------------------------------->
-        <!-----------------------------------------------ABOUT----------------------------------------------->
-        <div class="about">
-            <div class="about__inner container">
-                
-                <div class="about__title">
-                    Trusted by companies like
-                </div>
-                <div class="about__logos">
-                    <img src="./images/123311768_3612469995480975_3973151360976016848_n.gif">
-                    <img src="./images/123543727_729755937895427_5387288413461500065_n.gif">
-                    <img src="./images/123681616_1051464185267415_589720283858814156_n.gif">
-                    <img src="./images/123591041_2842005499378520_3041967508830629652_n.gif">
-                    <img src="./images/123790324_355487068885475_3558716973991681121_n.png">
-                </div>
-                <div class="about__section1">
-                    <img class="about__section1-image" src="./images/124154703_818862478909404_3043033491249395091_n.png" alt="">
-                    <img class="about__section1-image2" src="./images/phone2.png" alt="">
-                    <div class="about__section1-article">
-                        <div class="heading">
-                            <div class="heading__title p-b-12">
-                                Awesome apps<br> features
-                            </div>
-                            <div class="heading__desc m-b-86">
-                                Increase productivity with a simple to-do app. app for managing your personal budgets.
-                            </div>
+        <div class="container pl-5 pt-lg-5">
+            <div class="row align-items-center text-center text-md-left">
+                <div class="col-lg-7 animate__animated animate__slideInLeft">
+                    <div class="header__content offset-1">
+                        <div class="header__content-slogan">
+                            <img src="./images/tich.png">
+                            <div>#1 Editiors Choice App of 2020</div>
                         </div>
-                        <div class="component">
-                            <div class="component__item--left">
-                                <div class="logo bg-pink">
-                                    <img src="./images/speed.png">
-                                </div>
-                                <div class="component__item-text">
-                                    <div class="component__item-title pink">
-                                        Fast Performance
-                                    </div>
-                                    <div class="component__item-desc">
-                                        Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                    </div>
-                                </div>  
-                            </div>
-                            
-                            <div class="component__item--left">
-                                <div class="logo bg-blue">
-                                    <img src="./images/prototyping.png">
-                                </div>
-                                <div class="component__item-text">
-                                    <div class="component__item-title blue">
-                                        Prototyping
-                                    </div>
-                                    <div class="component__item-desc">
-                                        Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                    </div>
-                                </div>  
-                            </div>
-
-                            <div class="component__item--left">
-                                <div class="logo bg-green">
-                                    <img src="./images/vector.png">
-                                </div>
-                                <div class="component__item-text">
-                                    <div class="component__item-title green">
-                                        Vector Editing
-                                    </div>
-                                    <div class="component__item-desc">
-                                        Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                    </div>
-                                </div>  
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-----------------------------------------------END ABOUT----------------------------------------------->
-        <!-----------------------------------------------FEATURE----------------------------------------------->
-        <div class="feature">
-            <div class="container">
-                <div class="heading heading--row m-b-11">
-                    <div class="heading__title">
-                        Smart jackpots that you may love this anytime & anywhere
-                    </div>
-                    <div class="heading__desc">
-                        The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
-                    </div>
-                </div>
-
-                <div class="component--row">
-                    <div class="component__item--center">
-                        <div class="logo bg-pink">
-                            <img src="./images/bill.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title pink b">
-                                Automatic Payouts
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
-                    
-                    <div class="component__item--center">
-                        <div class="logo bg-blue">
-                            <img src="./images/network.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title blue b">
-                                Network Effect
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
-
-                    <div class="component__item--center">
-                        <div class="logo bg-green">
-                            <img src="./images/badge.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title green b">
-                                Bigger Rewards Method
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
-            </div>
-
-            </div>
-        </div>
-        <!-----------------------------------------------END FEATURE----------------------------------------------->
-        <!-----------------------------------------------DESIGNED----------------------------------------------->
-        <div class="designed">
-            <div class="container designed__inner">
-                <!-- <div class="designed__icons">
-                    <img class="designed__icons-1" src="./images/Layer 10.png">
-                    <img class="designed__icons-2" src="./images/Layer 11.png" alt="">
-                    <img class="designed__icons-3" src="./images/Layer 6.png" alt="">
-                    <img class="designed__icons-4" src="./images/Layer 7.png" alt="">
-                    <img class="designed__icons-5" src="./images/Layer 8.png" alt="">
-                    <img class="designed__icons-6" src="./images/Layer 9.png" alt="">
-                </div> -->
-                <img class="designed__image" src="./images/social.png">
-                <div class="designed__content">
-                    <div class="header__content">
-                        <h1 class="heading__title p-b-12">
-                            Designed & built by <br> the latest code <br> integration
+                        <h1 class="header__content-title">
+                            Best app for your modern lifestyle
                         </h1>
                         <p class="header__content-desc">
-                            The rise of mobile devices transforms the way we consume information entirely and the world's most elevant channels such as Facebook.
+                            Increase productivity with a simple to-do app. app for managing your personal budgets.
                         </p>
                         <div class="header__content-btn">
-                            <a href="#" class="btn">Learn more</a>
+                            <button class="btn my-2 my-sm-0 btn--primary mr-lg-4">Try for free</button>
+                            <button class="btn my-2 my-sm-0 btn--link">Watch demo video</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5 justify-content-end animate__animated animate__slideInRight">
+                    <img src="./images/phone.png" class="header__image img-fluid">
+                </div>
+            </div>
+        </div>
+        <img class="img-fluid header__image-bottom" src="./images/tower.png">
+    </div>
+    <!-----------------------------------------------END HEADER----------------------------------------------->
+    <!-----------------------------------------------FEATURES----------------------------------------------->
+    <div class="features m-t-160">
+        <div class="features__logos container text-center">
+            <div class="col-md-6 offset-md-3 pb-5">
+                <h3>Trusted by companies like</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-2 mb-5 d-flex align-items-center justify-content-center">
+                    <img class="figure-img wow animate__animated animate__zoomInLeft" src="./images/southwest.png "
+                        height="42">
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-5 d-flex align-items-center justify-content-center">
+                    <img class="figure-img wow animate__animated animate__zoomInDown" src="./images/anubis.png" height="84">
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-5 d-flex align-items-center justify-content-center">
+                    <img class="figure-img wow animate__animated animate__zoomIn" src="./images/alonzo.png" height="58">
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-5 d-flex align-items-center justify-content-center">
+                    <img class="figure-img wow animate__animated animate__zoomInUp" src="./images/express.png" height="71">
+                </div>
+                <div class="col-sm-6 col-lg-2 mb-5 d-flex align-items-center justify-content-center">
+                    <img class="figure-img wow animate__animated animate__zoomInRight" src="./images/maniac.png" height="51">
+                </div>
+            </div>
+        </div>
+        <div class="features__content container p-t-218">
+            <div class="row">
+                <div class="col-lg-7">
+                    <img class="img-fluid wow animate__animated animate__bounceInLeft" src="./images/phone_apple.png">
+                </div>
+                <div class="col-lg-5">
+                    <div class="article-text text-lg-left p-b-86 text-center wow animate__animated animate__lightSpeedInRight">
+                        <h1>Awesome apps features</h1>
+                        <p>Increase productivity with a simple to-do app. app for managing your personal budgets.</p>
+                    </div>
+                    <div class="article-logos">
+                        <div class="article-logos__item d-flex pb-5 wow animate__animated animate__lightSpeedInRight" data-wow-delay="0.5s">
+                            <img height="88" class="pr-5" src="./images/speed.png">
+                            <div class="article-logos__item-text">
+                                <h2 class="red">Fast Performance</h2>
+                                <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                    tests.</p>
+                            </div>
+                        </div>
+                        <div class="article-logos__item d-flex pb-5 wow animate__animated animate__lightSpeedInRight" data-wow-delay="0.5s">
+                            <img height="88" class="pr-5" src="./images/pencil.png">
+                            <div class="article-logos__item-text">
+                                <h2 class="blue">Fast Performance</h2>
+                                <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                    tests.</p>
+                            </div>
+                        </div>
+                        <div class="article-logos__item d-flex wow animate__animated animate__lightSpeedInRight" data-wow-delay="0.5s">
+                            <img height="88" class="pr-5" src="./images/vecto.png">
+                            <div class="article-logos__item-text">
+                                <h2 class="green">Fast Performance</h2>
+                                <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                    tests.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-----------------------------------------------END DESIGNED----------------------------------------------->
-        <!-----------------------------------------------CHOOSE----------------------------------------------->
-        <div class="choose">
-            <div class="container">
-                <div class="choose__header">
-                    <div class="choose__header-title">
-                        Why you should choose <br> our app
-                    </div>
-                    <div class="choose__header-desc">
-                        The rise of mobile devices transforms the way we consume information entirely <br> and the world's most elevant channels such as Facebook.
-                    </div>
+    </div>
+    <!-----------------------------------------------END FEATURES----------------------------------------------->
+    <!-----------------------------------------------JACKPOTS----------------------------------------------->
+    <div class="jackpots m-t-160">
+        <div class="container">
+            <div class="jackpots__content row text-center">
+                <div class="col-12 article-text text-lg-left d-lg-flex align-items-center">
+                    <h1 class="wow animate__animated animate__rotateInDownLeft">Smart jackpots that you may love this anytime & anywhere</h1>
+                    <div class="verticalLine justify-content-lg-center">&nbsp;</div>
+                    <p class="wow animate__animated animate__rotateInDownRight">The rise of mobile devices transforms the way we consume information entirely and the world's
+                        most elevant channels such as Facebook.</p>
                 </div>
-                
-                <div class="component--row">
-                    <div class="component__item--center">
-                        <div class="logo bg-pink">
-                            <img src="./images/web-design.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title gray-dark b">
-                                App Development
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
-                    
-                    <div class="component__item--center">
-                        <div class="logo bg-blue">
-                            <img src="./images/trophy.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title gray-dark b">
-                                10 Times Award
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
-
-                    <div class="component__item--center">
-                        <div class="logo bg-green">
-                            <img src="./images/computer.png">
-                        </div>
-                        <div class="component__item-text">
-                            <div class="component__item-title gray-dark b">
-                                Cloud Storage
-                            </div>
-                            <div class="component__item-desc">
-                                Get your blood tests delivered at home collect a sample from the news your blood tests.
-                            </div>
-                        </div>  
-                    </div>
             </div>
-
-            <div class="component--row">
-                <div class="component__item--center">
-                    <div class="logo bg-pink">
-                        <img src="./images/customer-support.png">
-                    </div>
-                    <div class="component__item-text">
-                        <div class="component__item-title gray-dark b">
-                            Customization
-                        </div>
-                        <div class="component__item-desc">
-                            Get your blood tests delivered at home collect a sample from the news your blood tests.
-                        </div>
-                    </div>  
-                </div>
-                
-                <div class="component__item--center">
-                    <div class="logo bg-blue">
-                        <img src="./images/ui.png">
-                    </div>
-                    <div class="component__item-text">
-                        <div class="component__item-title gray-dark b">
-                            UX Planning
-                        </div>
-                        <div class="component__item-desc">
-                            Get your blood tests delivered at home collect a sample from the news your blood tests.
-                        </div>
-                    </div>  
-                </div>
-
-                <div class="component__item--center">
-                    <div class="logo bg-green">
-                        <img src="./images/customer-service.png">
-                    </div>
-                    <div class="component__item-text">
-                        <div class="component__item-title gray-dark b">
-                            Customer Support
-                        </div>
-                        <div class="component__item-desc">
-                            Get your blood tests delivered at home collect a sample from the news your blood tests.
-                        </div>
-                    </div>  
-                </div>
-        </div>
-
-            </div>
-        </div>
-        <!-----------------------------------------------END CHOOSE----------------------------------------------->
-        <!-----------------------------------------------BUILT----------------------------------------------->
-        <div class="built">
-            <div class="container built__inner">
-                <img class="built__images" src="./images/iphone.jpg" alt="">
-                <div class="built__content">
-                    <div class="built__content-title">
-                        Ultimate features <br> that we built
-                    </div>
-                    <div class="built__content-desc">
-                        The rise of mobile devices transforms the way we <br> consume information entirely.
-                    </div>
-                </div>
-                <div class="built__section">
-                    <div class="component--row">
-                        <div class="component__item--center">
-                            <div class="logo bg-pink">
-                                <img src="./images/web-design.png">
-                            </div>
-                            <div class="component__item-text">
-                                <div class="component__item-title gray-dark b">
-                                    App Development
-                                </div>
-                                <div class="component__item-desc">
-                                    Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                </div>
-                            </div>  
-                        </div>
-                        
-                        <div class="component__item--center">
-                            <div class="logo bg-blue">
-                                <img src="./images/ui.png">
-                            </div>
-                            <div class="component__item-text">
-                                <div class="component__item-title gray-dark b">
-                                    UX Planing
-                                </div>
-                                <div class="component__item-desc">
-                                    Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                </div>
-                            </div>  
+            <div class="jackpots__logos row">
+                <div class="article-logos col-12 d-lg-flex justify-content-between">
+                    <div class="article-logos__item wow animate__animated animate__fadeInTopLeft">
+                        <img height="88" class="mb-5" src="./images/automatic.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="red">Fast Performance</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
                         </div>
                     </div>
-                    <div class="component--row">
-                        <div class="component__item--center">
-                            <div class="logo bg-pink">
-                                <img src="./images/computer.png">
-                            </div>
-                            <div class="component__item-text">
-                                <div class="component__item-title gray-dark b">
-                                    Cloud Storage
-                                </div>
-                                <div class="component__item-desc">
-                                    Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                </div>
-                            </div>  
+                    <div class="article-logos__item wow animate__animated animate__fadeInTopLeft" data-wow-delay="0.5s">
+                        <img height="88" class="mb-5" src="./images/network.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="blue">Fast Performance</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
                         </div>
-                        
-                        <div class="component__item--center">
-                            <div class="logo bg-blue">
-                                <img src="./images/customer-service.png">
-                            </div>
-                            <div class="component__item-text">
-                                <div class="component__item-title gray-dark b">
-                                    Customer support
-                                </div>
-                                <div class="component__item-desc">
-                                    Get your blood tests delivered at home collect a sample from the news your blood tests.
-                                </div>
-                            </div>  
-                        </div>
-                       
                     </div>
-                </div>
-                <div class="built__button">
-                    <a href="#" class="btn">See all</a>
+                    <div class="article-logos__item wow animate__animated animate__fadeInTopLeft" data-wow-delay="1s">
+                        <img height="88" class="mb-5" src="./images/bigger.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="green">Fast Performance</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-----------------------------------------------END BUILT----------------------------------------------->
-        <!-----------------------------------------------CHARGES----------------------------------------------->
-        <div class="charges">
-            <div class="container">
-                <div class="choose__header">
-                    <div class="choose__header-title">
-                        Get awesome features, without <br> extra charges
-                    </div>
-                    <div class="choose__header-desc">
-                        The rise of mobile devices transforms the way we consume information entirely <br>and the world's most elevant channels such as Facebook.
-                    </div>
+    </div>
+    <!-----------------------------------------------END JACKPOTS----------------------------------------------->
+    <!-----------------------------------------------DESIGNED----------------------------------------------->
+    <div class="designed m-t-160">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <img class="img-fluid  wow animate__animated animate__lightSpeedInLeft" src="./images/social.png">
                 </div>
-                <div class="charges__btn">
-                    <p href="#" class="btn--charges"><span>Monthly</span> <span>Annually</span> </p>
-                </div>
-                <div class="charges__article">
-
-                        <div class="article__container">
-                            <div class="article__header">
-                                <p class="article__price"><span>$0</span>/ month</p> 
-                                <div class="article__title">
-                                    Business Class
-                                </div>
-                                <div class="article__desc">
-                                    For small teams or office
-                                </div>
-                            </div>
-                            <div class="article__content">
-                                Drag & Drop Builder<br>1,000's of Templates<br>Blog Support Tools<br> eCommerce Store     
-                            </div>
-                            <div class="article__btn">
-                                <a href="#" class="btn btn--lg">Start free trail</a>
-                            </div>
-                        </div>
-
-                        <div class="article__container article__container--lg">
-                            <div class="article__header">
-                                <p class="article__price"><span>$99</span>/ month</p> 
-                                <div class="article__title">
-                                    Pro Master
-                                </div>
-                                <div class="article__desc">
-                                    For Best opportunities
-                                </div>
-                            </div>
-                            <div class="article__content">
-                                Drag & Drop Builder<br>1,000's of Templates<br>Blog Support Tools<br> eCommerce Store     
-                            </div>
-                            <div class="article__btn">
-                                <a href="#" class="btn btn--lg">Subscribe Now</a>
-                            </div>
-                            <a href="#" class="article__link">
-                                Or Start 14 days trail
-                            </a>
-                        </div>
-
+                <div class="col-lg-5">
+                    <div class="article-text text-lg-left p-b-86 text-center wow animate__animated animate__lightSpeedInRight">
+                        <h1>Designed & built by the latest code integration</h1>
+                        <p class="mt-5">The rise of mobile devices transforms the way we consume information entirely
+                            and the world's most elevant channels such as Facebook.</p>
+                        <button class="btn mt-5 btn--primary">Learn more</button>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-----------------------------------------------END CHARGES----------------------------------------------->
-        <!-----------------------------------------------PRODUCT----------------------------------------------->
-        <div class="product">
-            <div class="container">
-                <div class="product__image">
-                    <img src="./images/Home page.png">
+    </div>
+    <!-----------------------------------------------END DESIGNED----------------------------------------------->
+    <!-----------------------------------------------CHOOSE----------------------------------------------->
+    <div class="choose m-t-160">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="article-text p-b-86 text-center wow animate__animated animate__fadeInDown">
+                        <h1>Why you should choose our app</h1>
+                        <p>The rise of mobile devices transforms the way we consume information entirely and the world's
+                            most elevant channels such as Facebook.</p>
+                    </div>
                 </div>
-                <div class="product__content">
-                    <div class="header__content">
-                        <h1 class="heading__title p-b-12">
-                            Meet Client Satisfaction <br>by using product
-                        </h1>
-                        <p class="header__content-desc">
-                            The rise of mobile devices transforms the way we consume elevant channels such as Facebook.
+            </div>
+            <div class="row text-center mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInLeftBig">
+                        <img height="88" class="mb-5 figure" src="./images/app.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">App Development</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.2s">
+                        <img height="88" class="mb-5 figure" src="./images/10.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">10 Times Award</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.4s">
+                        <img height="88" class="mb-5 figure" src="./images/cloud.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">Cloud Storage</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInRightBig">
+                        <img height="88" class="mb-5 figure" src="./images/customization.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">Customization</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInRightBig" data-wow-delay="0.2s">
+                        <img height="88" class="mb-5 figure" src="./images/UX.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">UX Planning</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="article-logos__item wow animate__animated animate__fadeInRightBig" data-wow-delay="0.4s">
+                        <img height="88" class="mb-5 figure" src="./images/customers.png">
+                        <div class="article-logos__item-text">
+                            <h2 class="gray-dark">Customer Support</h2>
+                            <p>Get your blood tests delivered at home collect a sample from the news your blood tests.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------END CHOOSE----------------------------------------------->
+    <!-----------------------------------------------ULTIMATE----------------------------------------------->
+    <div class="ultimate m-t-160">
+        <div class="container  text-xl-left text-center">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="article-text text-lg-left p-b-86 text-center wow animate__animated animate__fadeInDown">
+                        <h1>Ultimate features
+                            that we built</h1>
+                        <p class="mt-5">The rise of mobile devices transforms the way we
+                            consume information entirely.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="article-logos__item text-lg-left text-center wow animate__animated animate__bounceInLeft" data-wow-delay="0.1s">
+                                <img height="88" class="mb-5 figure" src="./images/app.png">
+                                <div class="article-logos__item-text">
+                                    <h2 class="gray-dark">App Development</h2>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="article-logos__item text-lg-left text-center wow animate__animated animate__bounceInLeft" data-wow-delay="0.2s">
+                                <img height="88" class="mb-5 figure" src="./images/UX.png">
+                                <div class="article-logos__item-text">
+                                    <h2 class="gray-dark">UX Planing</h2>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6">
+                            <div class="article-logos__item text-lg-left text-center wow animate__animated animate__bounceInLeft" data-wow-delay="0.3s">
+                                <img height="88" class="mb-5 figure" src="./images/cloud.png">
+                                <div class="article-logos__item-text">
+                                    <h2 class="gray-dark">Cloud Storage</h2>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="article-logos__item text-lg-left text-center wow animate__animated animate__bounceInLeft" data-wow-delay="0.4s">
+                                <img height="88" class="mb-5 figure" src="./images/customers.png">
+                                <div class="article-logos__item-text">
+                                    <h2 class="gray-dark">Customer support</h2>
+                                    <p>Get your blood tests delivered at home collect a sample from the news your blood
+                                        tests.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn  btn--primary mt-5 wow animate__animated animate__bounceInLeft" data-wow-delay="0.5s">See all</button>
+                </div>
+            </div>
+            <div class="img-out">
+                <img class="img-fluid wow animate__animated animate__bounceInRight" src="./images/iphone.png">
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------END ULTIMATE----------------------------------------------->
+    <!-----------------------------------------------CHARGES----------------------------------------------->
+    <div class="charges m-t-160">
+        <div class="container text-center">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7">
+                    <div class="article-text p-b-86 text-center wow animate__animated animate__fadeInDown">
+                        <h1>Get awesome features, without extra charges</h1>
+                        <p>The rise of mobile devices transforms the way we consume information entirely and the world's
+                            most elevant channels such as Facebook.</p>
+                    </div>
+                    <p href="#" data-toggle="tooltip" data-placement="top"
+                        title=" <img    src='https://www.simplyrecipes.com/wp-content/uploads/2019/03/HT-Make-Roast-Chicken-LEAD-5v2.jpg'/> "
+                        class="btn btn--charges wow animate__animated animate__fadeInDownBig"><span>Monthly</span> <span>Annually</span> </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 d-flex justify-content-lg-end justify-content-center">
+                    <div class="card wow animate__animated animate__fadeInLeftBig">
+                        <div class="card__header">
+                            <p><span>$0</span>/month</p>
+                            <div class="article-logos__item-text">
+                                <h2 class="gray-dark">Business Class</h2>
+                                <p>For small teams or office
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__main">
+                            <p>Drag & Drop Builder</p>
+                            <p>1,000's of Templates</p>
+                            <p>Blog Support Tools</p>
+                            <p>eCommerce Store </p>
+                            <button class="btn  btn--primary btn--long">Start free trail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-lg-start  justify-content-center">
+                    <div class="card card--long wow animate__animated animate__fadeInRightBig">
+                        <div class="card__header">
+                            <p><span>$99</span>/month</p>
+                            <div class="article-logos__item-text">
+                                <h2 class="gray-dark">Pro Master</h2>
+                                <p>For Best opportunities
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card__main">
+                            <p>Drag & Drop Builder</p>
+                            <p>1,000's of Templates</p>
+                            <p>Blog Support Tools</p>
+                            <p>eCommerce Store </p>
+                            <button class="btn  btn--primary btn--long">Subscribe Now</button>
+                            <button class="btn  btn--link">Or Start 14 days trail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-----------------------------------------------END CHARGES----------------------------------------------->
+    <!-----------------------------------------------SATISFACTION----------------------------------------------->
+    <div class="satisfaction m-t-160">
+        <div class="container">
+            <div class="img-out wow animate__animated animate__slideInLeft">
+                <img class="img-fluid" src="./images/world.png">
+            </div>
+            <div class="row justify-content-lg-end justify-content-center">
+                <div class="col-lg-6">
+                    <div class="article-text text-lg-left p-b-86 text-center">
+                        <h1 class="wow animate__animated animate__slideInLeft">Meet Client Satisfaction
+                            by using product</h1>
+                        <p class="mt-5 mb-5 wow animate__animated animate__slideInLeft">The rise of mobile devices transforms the way we consume.
+                            elevant channels such as Facebook.</p>
+                        <div class="stars yellow h2 mb-5 wow animate__animated animate__slideInLeft">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="article-logos__item-text mb-5 wow animate__animated animate__slideInLeft">
+                            <h2 class="gray-dark pb-5 wow animate__animated animate__slideInLeft">User friendly & Customizable</h2>
+                            <p class="wow animate__animated animate__slideInLeft">Bring to the table win-win survival strategies to ensure proactive domination. At the end
+                                of the day, going forward, a new normal that has evolved from generation X is on the
+                                runway heading towards a streamlined cloud solution. User generated content in real-time
+                                will have multiple touchpoints for offshoring.
+                            </p>
+                        </div>
+                        <div class="satisfaction__slide d-flex align-items-center pt-1">
+                            <div class="satisfaction__slide-img wow animate__animated animate__slideInLeft">
+                                <img src="./images/adult-beard-boy-220453.png" alt="">
+                            </div>
+                            <div class="satisfaction__slide-content wow animate__animated animate__slideInLeft">
+                                <p class="gray-dark font-weight-bold">Zoltan Nemeth</p>
+                                <p>CEO of Pixler Lab</p>
+                            </div>
+                            <div class="satisfaction__slide-arrow d-flex ml-auto wow animate__animated animate__slideInLeft">
+                                <div class="arrow arrow--left mr-4">
+                                    <i class="fas fa-arrow-left"></i>
+                                </div>
+                                <div class="verticalLine">&nbsp;</div>
+                                <div class="arrow arrow--right">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------END SATISFACTION----------------------------------------------->
+    <!-----------------------------------------------QUESTION----------------------------------------------->
+    <div class="question m-t-160">
+        <div class="container">
+            <div class="row mb-5 justify-content-center mt-5 wow animate__animated animate__zoomIn">
+                <div class="col-md-7">
+                    <div class="article-text p-b-86 text-center">
+                        <h1 class="pb-4">Frequently asked questions</h1>
+                        <p>The rise of mobile devices transforms the way we consume information entirely
+                            and the world's most elevant channels such as Facebook.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="article-logos__item-text is-actived wow animate__animated animate__zoomIn">
+                        <h2 class="gray-dark pb-4">How to contact with riders emergency?</h2>
+                        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative
+                            approaches to corporate strategy foster collaborative thinking to further the overall value
+                            proposition. Organically grow the holistic world view of disruptive innovation via workplace
+                            diversity and empowerment.
+
+                            Bring to the table win-win survival strategies to ensure proactive domination. At the end of
+                            the day, going forward, a new normal that has evolved from generation X is on the runway
+                            heading towards a streamlined cloud solution. User generated content in real-time will have
+                            multiple touchpoints for offshoring.
                         </p>
-                        <div class="header__star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="component__item--center">
-                            <div class="component__item-text">
-                                <div class="component__item-title gray-dark b">
-                                    User friendly & Customizable
-                                </div>
-                                <div class="component__item-desc">
-                                    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                                </div>
-                            </div>  
-                        </div>
-                        <div class="header__people">
-                            <div class="header__people-image">
-                                <img src="./images/adult-beard-boy-220453.png">
-                            </div>
-                            <div class="header__people-info">
-                                <p class="info__name">Zoltan Nemeth</p>
-                                <p class="info__positive">CEO of Pixler Lab</p>
-                            </div>
-                            <div class="header__people-contact">
-
-                            </div>
-                        </div>
+                    </div>
+                    <div class="article-logos__item-text wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
+                        <h2 class="gray-dark">App installation failed, how to update system information?</h2>
+                    </div>
+                    <div class="article-logos__item-text wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                        <h2 class="gray-dark">Website reponse taking time, how to improve?</h2>
+                    </div>
+                    <div class="article-logos__item-text wow animate__animated animate__zoomIn" data-wow-delay="0.3s">
+                        <h2 class="gray-dark">New update fixed all bug and issues</h2>
+                    </div>
+                    <div class="article-logos__item-text wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                        <h2 class="gray-dark">How to contact with riders emergency?</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <!-----------------------------------------------END PRODUCT----------------------------------------------->
-        <!-----------------------------------------------QUESTION----------------------------------------------->
-        <div class="question">
-            <div class="container">
-                <div class="choose__header">
-                    <div class="choose__header-title">
-                        Get awesome features, without <br> extra charges
-                    </div>
-                    <div class="choose__header-desc">
-                        The rise of mobile devices transforms the way we consume information entirely <br>and the world's most elevant channels such as Facebook.
+    </div>
+    <!-----------------------------------------------END QUESTION----------------------------------------------->
+    <!-----------------------------------------------DOWNLOAD----------------------------------------------->
+    <div class="download m-t-160">
+        <div class="container-fluid text-center">
+            <div class="row align-items-center">
+                <div class="col-lg-5 offset-lg-2">
+                    <div class="article-text text-lg-left text-center pb-3 wow animate__animated animate__lightSpeedInLeft">
+                        <h1>Download our App now !</h1>
+                        <p class="mt-5 mb-5">The rise of mobile devices transforms the way we consume information
+                            entirely
+                            and the world's most elevant channels such as Facebook.</p>
+                        <img class="figure-img img-fluid pr-lg-0 pr-xl-5 figure " src="./images/apple.png" alt="">
+                        <img class="figure-img img-fluid figure" src="./images/google.png" alt="">
                     </div>
                 </div>
-                <ul class="question__items">
-                    <li class="question__item">
-                        <div class="question__title">
-                            <div class="question__title-question">
-                                How to contact with riders emergency?
-                            </div>
-                            <div class="question__title-plus">
-
-                            </div>
-                        </div>
-                        <div class="question__answer">
-                            Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                        </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid wow animate__animated animate__lightSpeedInRight" src="./images/checker.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------------------------END DOWNLOAD----------------------------------------------->
+    <!-----------------------------------------------FOOTER----------------------------------------------->
+    <div class="footer text-center wow animate__animated animate__tada">
+        <div class="container-fluid">
+            <a class="navbar-brand font-weight-bold logo" href="#"><span class="logo--orange">App</span><span
+                    class="white">Lab</span></a>
+            <div class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
                     </li>
-                    <li class="question__item">
-                        <div class="question__title">
-                            <div class="question__title-question">
-                                How to contact with riders emergency?
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Key Features</a>
                     </li>
-                    <li class="question__item">
-                        <div class="question__title">
-                            <div class="question__title-question">
-                                How to contact with riders emergency?
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Pricing</a>
                     </li>
-                    <li class="question__item">
-                        <div class="question__title">
-                            <div class="question__title-question">
-                                How to contact with riders emergency?
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Testiminial</a>
                     </li>
-                    <li class="question__item">
-                        <div class="question__title">
-                            <div class="question__title-question">
-                                How to contact with riders emergency?
-                                <i class="fas fa-plus"></i>
-                            </div>
-                        </div>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">FAQ</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <!-----------------------------------------------END QUESTION----------------------------------------------->
-        <!-----------------------------------------------DOWNLOAD----------------------------------------------->
-        <div class="download">
-            <div class="container">
-                <div class="download__content">
-                    <div class="download__content-title">
-                        Download our App now !
-                    </div>
-                    <div class="download__content-desc">
-                        The rise of mobile devices transforms the way we consume information entirely <br>
-                        and the world's most elevant channels such as Facebook.
-                    </div>
-                </div>
-                <div class="download__button">
-                    <img src="./images/en_badge_web_generic.png">
-                    <img src="./images/download-on-the-app-store-apple.png" alt="">
-                </div>
-                <img class="download__image" src="./images/checking.png">
+            <div class="footer__icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-slack-hash"></i>
+                <i class="fab fa-github-square"></i>
+            </div>
+            <div class="footer__copyright">
+                Copyright© Arifur Rahman Tushar 2019. All rights reserved
             </div>
         </div>
-        <!-----------------------------------------------END DOWNLOAD----------------------------------------------->
-        <!-----------------------------------------------FOOTER----------------------------------------------->
-        <div class="footer">
-                <div class="footer__logo">
-                    <a href="#" class="header__logo">
-                        <span class="orange">App</span><span class="gray">Lab</span>
-                    </a>
-                </div>
-                <div class="footer__nav">
-                    <nav class="menu">
-                        <ul class="menu__list">
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Home</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Key Features</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Pricing</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">Testiminial</a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#" class="menu__link">FAQ</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer__icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-slack-hash"></i>
-                    <i class="fab fa-github-square"></i>
-                </div>
-                <div class="footer__copyright">
-                    Copyright© Arifur Rahman Tushar 2019. All rights reserved
-                </div>
-            </div>
-        </div>
-        <!-----------------------------------------------END FOOTER----------------------------------------------->
+        <img class="img-out" src="./images/two-circle.png" alt="">
     </div>
+    <!-----------------------------------------------END FOOTER----------------------------------------------->
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
